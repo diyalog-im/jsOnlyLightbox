@@ -6,14 +6,14 @@
   "style": "css/lightbox.css",
   "repository": {
     "type": "git",
-    "url": "git+https://olegshilov@github.com/olegshilov/jsOnlyLightbox.git"
+    "url": "git+https://actorapp@github.com/actorapp/jsOnlyLightbox.git"
   },
   "author": "Felix Hagspiel <info@felixhagspiel.de> (http://felixhagspiel.de)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/olegshilov/jsOnlyLightbox/issues"
+    "url": "https://github.com/actorapp/jsOnlyLightbox/issues"
   },
-  "homepage": "https://github.com/olegshilov/jsOnlyLightbox#readme",
+  "homepage": "https://github.com/actorapp/jsOnlyLightbox#readme",
   "keywords": [
     "responsive",
     "lightbox",
