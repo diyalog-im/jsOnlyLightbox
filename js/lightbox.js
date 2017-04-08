@@ -8,7 +8,7 @@
  * - Free for use in both personal and commercial projects
  */
 
-var Lightbox = function Lightbox () {
+var Lightbox = function () {
 
   /**
    * Private vars
