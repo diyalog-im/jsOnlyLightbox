@@ -805,3 +805,4 @@ var Lightbox = function () {
   }
 }
 
+module.exports = Lightbox;
