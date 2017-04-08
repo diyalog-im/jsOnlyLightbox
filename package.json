@@ -1,30 +1,73 @@
 {
-  "name": "jsonlylightbox",
-  "version": "0.5.1",
-  "description": "Small responsive vanilla JS lightbox for displaying images.",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/felixhagspiel/jsOnlyLightbox.git"
-  },
-  "keywords": [
-    "lightbox",
-    "vanilla",
-    "ie8",
-    "responsive",
-    "gallery",
-    "small",
-    "lightweight",
-    "js only",
-    "no jquery",
-    "javascript"
+  "_args": [
+    [
+      "jsonlylightbox@github:diyalog-im/jsOnlyLightbox",
+      "/Users/tolga/Diyalog/diyalog-platform/actor-sdk/sdk-web"
+    ]
   ],
-  "author": "Felix Hagspiel",
-  "license":     {
-    "type": "MIT",
-    "url": "https://github.com/felixhagspiel/jsOnlyLightbox/blob/master/License.txt"
+  "_from": "diyalog-im/jsOnlyLightbox",
+  "_id": "jsonlylightbox@0.5.1",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/jsonlylightbox",
+  "_phantomChildren": {},
+  "_requested": {
+    "hosted": {
+      "directUrl": "https://raw.githubusercontent.com/diyalog/jsOnlyLightbox/package.json",
+      "gitUrl": "git://github.com/diyalog-im/jsOnlyLightbox.git",
+      "httpsUrl": "git+https://github.com/diyalog-im/jsOnlyLightbox.git",
+      "shortcut": "github:diyalog-im/jsOnlyLightbox",
+      "ssh": "git@github.com:diyalog-im/jsOnlyLightbox.git",
+      "sshUrl": "git+ssh://git@github.com/diyalog-im/jsOnlyLightbox.git",
+      "type": "github"
+    },
+    "name": "jsonlylightbox",
+    "raw": "jsonlylightbox@github:diyalog-im/jsOnlyLightbox",
+    "rawSpec": "github:diyalog-im/jsOnlyLightbox",
+    "scope": null,
+    "spec": "github:diyalog-im/jsOnlyLightbox",
+    "type": "hosted"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "git://github.com/diyalog-im/jsOnlyLightbox.git#cb7f24496b606cb770ef8d63f111c5f1927963f6",
+  "_shasum": "832bce642cc3f44dcaa56e97de084c0369694b49",
+  "_shrinkwrap": null,
+  "_spec": "jsonlylightbox@github:diyalog-im/jsOnlyLightbox",
+  "_where": "/Users/tolga/Diyalog/diyalog-platform/actor-sdk/sdk-web",
+  "author": {
+    "email": "info@felixhagspiel.de",
+    "name": "Felix Hagspiel",
+    "url": "http://felixhagspiel.de"
   },
   "bugs": {
-    "url": "https://github.com/felixhagspiel/jsOnlyLightbox/issues"
+    "url": "https://github.com/diyalog-im/jsOnlyLightbox/issues"
   },
-  "homepage": "http://jslightbox.felixhagspiel.de/"
+  "dependencies": {},
+  "description": "Responsive image gallery written in plain JavaScript",
+  "devDependencies": {},
+  "gitHead": "cb7f24496b606cb770ef8d63f111c5f1927963f6",
+  "homepage": "https://github.com/diyalog-im/jsOnlyLightbox#readme",
+  "keywords": [
+    "responsive",
+    "lightbox",
+    "image",
+    "gallery",
+    "no jquery",
+    "vanilla",
+    "javascript"
+  ],
+  "license": "ISC",
+  "main": "js/lightbox.js",
+  "name": "jsonlylightbox",
+  "optionalDependencies": {},
+  "readme": "# jsOnlyLightbox 0.5.1\r\n#### Responsive Lightbox written in  plain JavaScript\r\n\r\n## Features\r\n\r\n- no jQuery needed, plain JavaScript\r\n- Fully responsive\r\n- Customizable Theme, SCSS-files included\r\n- Small in Size (< 10Kb)\r\n- CSS3-Animations & controls, however, loading GIFs and arrow images can be used\r\n- Licensed under MIT, code is free for commercial &amp; personal use. However, it would be great if you send me an link of your websites using my lightbox so I can see it live in action and post some real-word examples here. I am also happy about backlinks & github-stars :) **The pictures included are NOT free to use!** Please  [contact me first](http://felixhagspiel.de/contact) if you want to use the them!\r\n- IE8+ support:\r\n- Visit me on [felixhagspiel.de](http://felixhagspiel.de)\r\n\r\nDo not forget to add those lines inside your `<head></head>` if you want to support IE8:\r\n\r\n\t\t<!--[if lt IE 9]>\r\n\t\t    <script src=\"//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js\" type=\"text/javascript\"></script>\r\n\t\t<![endif]-->\r\n\r\n## Download\r\nThe lightbox is still in development mode, so please post any issues and bugs here. \r\n\r\nFork or [download at jslightbox.felixhagspiel.de](http://jslightbox.felixhagspiel.de/).\r\n\r\nInstall with Bower\r\n\r\n\tbower install jsonlylightbox --save\r\n\r\nInstall with npm\r\n\t\r\n\tnpm install jsonlylightbox --save\r\n\r\n\r\n## Demo\r\n\r\nYou can watch it live at [jslightbox.felixhagspiel.de](http://jslightbox.felixhagspiel.de/) or on [felixhagspiel.de](http://felixhagspiel.de/projects)\r\n\r\n## Usage\r\n\r\nAdd the CSS-File to the head of your html-file:\r\n\t\r\n\t<link rel=\"stylesheet\" href=\"css/lightbox.css\">\r\n\r\nAdd this before the closing body tag:\r\n\r\n\t<script src=\"lightbox.min.js\" type=\"text/javascript\"></script>\r\n\t<script>\r\n\t\tvar lightbox = new Lightbox();\r\n\t \tlightbox.load();\r\n\t</script>\r\n\r\nYou just need to add the attribute `data-jslghtbx` to all the images you want to show in the lightbox:\r\n\r\n\t<img class=\"jslghtbx-thmb\" src=\"img/lightbox/1.jpg\" alt=\"\" data-jslghtbx>\r\n\r\nNote: The CSS-class `jslghtbx-thmb` is optional. You can use your own styling if you want.\r\n\r\nYou can pass a link of a different image via the `data-jslghtbx` attribute, which then will be loaded on click. Use this if you want to use small sized pictures for the thumbnails to reduce traffic:\r\n\r\n\t<img class=\"jslghtbx-thmb\" src=\"img/lightbox/1.jpg\" alt=\"\" data-jslghtbx=\"img/1-big.jpg\">\r\n\r\nIf you want to group images to structure your content, use the `data-jslghtbx-group` attribute. You can have multiple groups on one page. This is also helpful when you dont want to use thumbnails, just hide the thumbnails via CSS:\r\n\r\n\t<img class=\"jslghtbx-thmb\" src=\"img/lightbox/3-small.jpg\" alt=\"\" data-jslghtbx=\"img/3-big.jpg\" data-jslghtbx-group=\"mygroup1\">\r\n\t<img class=\"jslghtbx-thmb\" src=\"img/lightbox/4-small.jpg\" alt=\"\" data-jslghtbx=\"img/4-big.jpg\" data-jslghtbx-group=\"mygroup1\">\r\n\t<img class=\"jslghtbx-thmb\" src=\"img/lightbox/6-small.jpg\" alt=\"\" data-jslghtbx=\"img/6-big.jpg\" data-jslghtbx-group=\"mygroup1\">\r\n\t<img class=\"jslghtbx-thmb\" src=\"img/lightbox/7-small.jpg\" alt=\"\" data-jslghtbx=\"img/7-big.jpg\" data-jslghtbx-group=\"mygroup1\">\r\n\r\n\r\n\t<img class=\"jslghtbx-thmb\" src=\"img/lightbox/8-small.jpg\" alt=\"\" data-jslghtbx=\"img/1-big.jpg\" data-jslghtbx-group=\"mygroup2\">\r\n\t<img class=\"jslghtbx-thmb\" src=\"img/lightbox/9-small.jpg\" alt=\"\" data-jslghtbx=\"img/1-big.jpg\" data-jslghtbx-group=\"mygroup2\">\r\n\t<img class=\"jslghtbx-thmb\" src=\"img/lightbox/10-small.jpg\" alt=\"\" data-jslghtbx=\"img/1-big.jpg\" data-jslghtbx-group=\"mygroup2\">\r\n\r\nThe default control-arrows will be loaded when using groups. You can also use your own control-buttons by providing an ID via the options. For more detail look into the options section below.\r\n\r\nIf you want to use captions add the `data-jslghtbx-caption` attribute. You can also pass HTML:\r\n\t\r\n\t<img class=\"jslghtbx-thmb\" src=\"img/lightbox/2.jpg\" alt=\"\" data-jslghtbx data-jslghtbx-caption=\"This is my <a href='http://abc.de'>caption.</a>\">\r\n\r\n## CSS Animations\r\n\r\nWhen the lightbox is opened first, the image inside gets the class `jslghtbx-animate-init`. This is useful if you want to animate opacity. \r\nIf you are showing multiple images inside the box via the group-param, the classes `jslghtbx-animating-next` and `jslghtbx-animating-prev` are added and removed, each for half of the durationtime given by the option `animation` (defaults to 400 milliseconds).\r\nThe box receives the class `jslghtbx-active` when opened, and the wrapper gets `jslghtbx-wrapper-active` when all calculations are done. Feel free to edit those styles.\r\n\r\n## Options\r\n\r\n###\t`{responsive: bool}` \r\n_Default: true_\r\n\r\nIf set to true, the image will be resized according to the viewport on resize-events.\r\n\r\n###\t`{preload: bool}`\r\n_Default: true_\r\n\r\nIf set to true, the previous and the next image of the currently shown image will be preloaded if not already in cache.\r\n\r\n###\t`{loadingAnimation: string || number || boolean}`\r\n_Default: 200_\r\n\r\nIf set to true, an animation will be rendered until the image is loaded. Alternatively you can pass milliseconds as number, which defines the interval the `span`-elements inside the `jslghtbx-loading-animation`-container get the class `jslghtbx-active` (the default interval is 200ms). You can use this to apply your own styling via CSS. The animation is using CSS3, so it will not work in IE8/9. You can also pass a link to an GIF-image, which then replaces the animation. This is disabled for IE8 due to bugs with transparent backgrounds and performance issues. If set to false, no animation is shown.\r\n\r\nNote: The animations get an 500ms delay until they start, so they won`t pop up on fast connections. Also, you should check for CSS3-support and set the animation-option accordingly.\r\n\r\n###\t`{animElCount: number}`\r\n_Default: 4_\r\n\r\nThis sets the number of animated `span` tags which are appended to the `jslghtbx-loading-animation` container. Must be higher than 1.\r\n\r\n###\t`{carousel: bool}`\r\n_Default: true_\r\n\r\nIf set to true, you can infinitely loop through all the images by clicking the next/prev button or calling the `next()` / `prev()`-functions.  \r\n\r\n###\t`{captions: bool}`\r\n_Default: true_\r\n\r\nIf set to true, the caption text inside the `data-jslghtbx-caption` attribute will be shown. Note that the text may not be visible completely if it is very long. Feel free to style the caption class `.jslghtbx-caption` to your needs.\r\n\r\n###\t`{closeOnClick: bool}`\r\n_Default: true_\r\n\r\nIf set to true, the lightbox will close on click anywhere inside the viewport, not just by clicking on the close-button. \r\n\r\nNote: May not work in IE8.\r\n\r\n###\t`{nextOnClick: bool}`\r\n_Default: true_\r\n\r\nIf set to true, a click on the current image shows the next image.\r\n\r\n###\t`{hideOverflow: bool}`\r\n_Default: true_\r\n\r\nHides scrollbars when lightbox is opened.\r\n\r\n###\t`{hideCloseBtn: bool}`\r\n_Default: false_\r\n\r\nHides the closebutton inside the lightbox.\r\n\r\n###\t`{dimensions: bool}`\r\n_Default: true_\r\n\r\nImages will be resized to a maximum of the original dimensions. If set to false, images are always scaled to fullscreen.\r\n\r\n###\t`{controls: bool}`\r\n_Default: true_\r\n\r\nShow or hide the default next- & prev-buttons.\r\n\r\n###\t`{keyControls: bool}`\r\n_Default: true_\r\n\r\nUse right and left keys on keyboard to navigate through gallery and escape key to close the box.\r\n\r\n###\t`{nextImg: 'path/to/image'}`\r\nHere you can pass the path to an alternative next-button image. By default the arrows are rendered via CSS. If you want to use images make sure to apply custom styling for smaller viewports via the CSS-Class `jslghtbx-next`.\r\n\r\n###\t`{prevImg: 'path/to/image'}`\r\nHere you can pass the path to an alternative prev-button image. By default the arrows are rendered via CSS. If you want to use images make sure to apply custom styling for smaller viewports via the CSS-Class `jslghtbx-prev`.\r\n\r\n###\t`{controlClose: string}`\r\nReplace standard close button with string. You can pass html here.\r\n\r\n###\t`{boxId: 'elementId'}`\r\nHere you can pass an ID if you want to use your own box-element. Images will be appended to that element then. The element will receive a class \"jslghtbx-active\" when opened, so style this class properly (you need at least to remove visibility by default and add it on active). If you want it to look like the default-box, just add the class \"jslghtbx\" to the box-element.\r\n\r\n###\t`{animation: number | bool}`\r\n_Default: 400_\r\n\r\nThis options defines wether the next/prev-switch should be animated. If you pass an integer-value, it defines the milliseconds for the animation. Passing `false` disables the animation. Note that all animations are done via CSS3-transitions, so if you want to alter them you have to do it via the CSS-file. \r\n\r\n###\t`{maxImgSize: float}`\r\n_Default: 0.8_\r\n\r\nThis is the modifier which is used to reduce the images size when it's full size won't fit in the viewport. Maximum value is 1 for 100%.\r\n\r\n#### Callbacks\r\n\r\n###\t`{onopen: function}`\r\nFunction that is executed when the lightbox is opened.\r\n\r\n###\t`{onclose: function}`\r\nFunction that is executed when the lightbox is closed.\r\n\r\n###\t`{onresize: function}`\r\nFunction that is executed when the lightbox is resized.\r\n\r\n###\t`{onload: function(event)}`\r\nFunction that is executed once the current image is loaded. The callback receives an event which is `\"prev\"` if the prev button was clicked, `\"next\"` if the next button was clicked or `false` for all other ways of opening the lightbox.\r\n\r\n###\t`{onloaderror: function(event)}`\r\nFunction that is executed when the current image fails to load. You can add your handlers here to display a warning or call other functions. The callback receives an event which is `\"prev\"` if the prev button was clicked, `\"next\"` if the next button was clicked or `false` for all other ways of opening the lightbox. This allows you to handle errors. For example you can just show the next or previous picture if the current one is not available:\r\n\t\t\r\n\t\tonloaderror: function(event){\r\n\t\t\tif(event === 'prev')\r\n\t\t\t\tlightbox.prev()\r\n\t\t\telse\r\n\t\t\t\tlightbox.next()\t\r\n\t\t}\r\n\r\n## Attributes\r\n\r\n### `lightbox.thumbnails`\r\nType: `Array`\r\n\r\nArray holding all thumbnail elements. If you want to dynamically load and push pictures to an existing group be sure to set a groupname on the element via the `data-jslghtbx-group` attribute. If you want to show just one dynamic loaded picture you should use the `open()` method.\r\nExample:\r\n\r\n\tvar img = new Image()\r\n\timg.src = 'img/lightbox/9-small.jpg'\r\n\timg.setAttribute('data-jslghtbx-group','mygroup')\r\n\tlightbox.thumbnails.push(img)\r\n\r\n## Methods\r\n\r\n### `lightbox.load(options)`\r\n\r\nThe init-function. Here you can pass your option-object. Has to be called once on the box-object. If you dont pass options, the defaults are loaded. A full call may look like this:\r\n\r\nExample:\r\n\r\n\t/* Default options */\r\n\tvar options = {\r\n\t\tboxId: \t\t\t\t'testID',\r\n\t\tdimensions: \t\ttrue,\r\n\t\tcaptions: \t\t\ttrue,\r\n\t\tprevImg: \t\t\tfalse,\r\n\t\tnextImg: \t\t\tfalse,\r\n\t\thideCloseBtn: \t\tfalse,\r\n\t\tcloseOnClick: \t\ttrue,\r\n\t\tloadingAnimation: \t200,\r\n\t\tanimElCount: \t\t4,\r\n\t\tpreload: \t\t\ttrue,\r\n\t\tcarousel: \t\t\ttrue,\r\n\t\tanimation: \t\t\t400,\r\n\t\tnextOnClick: \t\ttrue,\r\n\t\tresponsive: \t\ttrue,\r\n\t\tmaxImgSize:\t\t\t0.8,\r\n\t\tkeyControls: \t\ttrue,\r\n\t\t// callbacks\r\n\t\tonopen: function(){\r\n\t\t\t// ...\r\n\t\t},\r\n\t\tonclose: function(){\r\n\t\t\t// ...\r\n\t\t},\r\n\t\tonload: function(){\r\n\t\t\t// ...\r\n\t\t},\r\n\t\tonresize: function(event){\r\n\t\t\t// ...\r\n\t\t},\r\n\t\tonloaderror: function(event){\r\n\t\t\t// ...\r\n\t\t}\r\n\t};\r\n\tvar lightbox = new Lightbox();\r\n\tlightbox.load(options);\r\n\r\n### `lightbox.open(src-link || image, groupName)`\r\nYou can open the box manually via JS. There are multiple ways to tell the box which image to load. \r\n\r\n1. Via link:\r\n\r\n\t\tdocument.getElementById('open-lightbox').addEventListener('click',function(){\r\n\t\t\tlightbox.open('../img/lightbox/1.jpg');\r\n\t\t});\r\n\r\n2. Via image object:\r\n\r\n\t\tvar myImg = document.getElementById('myImg');\r\n\t\tdocument.getElementById('open-lightbox').addEventListener('click',function(){\r\n\t\t\tlightbox.open(myImg);\r\n\t\t});\r\n\r\n3. Via group name, which shows the first image of the group. The first parameter must be false:\r\n\r\n\t\tdocument.getElementById('open-lightbox').addEventListener('click',function(){\r\n\t\t\tlightbox.open(false,'myGroup');\r\n\t\t});\r\n\r\n### `lightbox.next()`\r\nShows the next image of current group\r\n\r\n### `lightbox.prev()`\r\nShows the previous image of current group\r\n\r\n### `lightbox.close()`\r\nCloses the lightbox.\r\n\r\n### `lightbox.resize()`\r\nRepositions the image in the lightbox. Is called on every resize-event unless you set the `responsive`-option to false.",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://diyalog-im@github.com/diyalog-im/jsOnlyLightbox.git"
+  },
+  "style": "css/lightbox.css",
+  "version": "0.5.1"
 }
